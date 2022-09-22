@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tabu.css">
-</head>
-<body>
-    <h1>Tabuada do 2</h1>
-    <script>
-        let listaDeNumeros = [1,2,3,4,5,6,7,8,9];
+<meta charset="UTF-8">
+<script>
+    let listaDeNumeros = [1,2,3,4,5,6,7,8,9];
+
+    let soma = 0;
     
-        let multi = 0;
-        
-        for (let numero of listaDeNumeros) {
-            multi = numero * 2
-            document.write(`${numero} x 2 =  ${multi}</br>`);
-        }
-    </script>
-    
-</body>
-</html>
-
-
-
+    for (let numero of listaDeNumeros) {
+        console.log(`A soma atual é: ${soma}`);
+        console.log(`O número atual é: ${numero}`);
+        soma = soma + numero;
+        console.log(`Agora a soma é: ${soma}`);
+    }
+</script>
